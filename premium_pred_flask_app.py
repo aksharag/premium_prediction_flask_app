@@ -40,4 +40,4 @@ def predict():
         all_cols = np.concatenate((scaled_cols, diabetes, bp, transplant, chronic_disease, allergies, cancer, no_of_surgeries), axis=None).reshape(-1,11)
 
         pred = model.predict(all_cols)[0]
-        return {"loan_approval_status":pred}
+        return {"get_premium":pred}
